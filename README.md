@@ -11,10 +11,14 @@ We will create a program that
   - *freq* is the frequency of occurence for a character (count how many times that character occurs in the file).
   - *character* is each unique character
   - *percentage* the percentage of the freq to the total.
+* prints the total number characters (letters & numbers) counted.
 
 The starter code in `count_characters.py` check proper command line usage
 and opens the text file, but you will need to implement the code
 that counts the frequencies and prints the histogram.
+
+Finally, you will need to create a file `brown-freqs.txt` containing the output
+of the file from analyzing `brown.txt`.
 
 ## Brown Corpus
 
@@ -70,4 +74,28 @@ $ py count_characters.py brown.txt
 1289    8       0.0002702775807367779
 1077    7       0.0002258254107474863
 Total characters: 4769171
+```
+
+## Output Redirection
+
+```bash
+$ py count_characters.py brown.txt > brown-freqs.txt
+```
+
+### git `add`, `commit` and `push`
+
+When your files are complete and tested.
+
+```bash
+# Check repository status
+git status
+
+# add new files or files that changed
+git add "<changed files>"
+
+# commit the added files, giving a good message describing the changes
+git commit -m 'decription of change'`
+
+# push changes to github
+git push
 ```
